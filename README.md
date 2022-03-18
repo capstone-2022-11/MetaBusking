@@ -8,27 +8,27 @@
 # Abstract
 Meta Busking is a platform that will lead the new online busking culture. Form your music culture in this virtual space.
 
-***Upload***
-Upload the music you made. Other users will enjoy and share the music you make.
+-***Upload***<br>
+  -Upload the music you made. Other users will enjoy and share the music you make.
 
-***Listen***
-You can stream the music you want from your playlist right away.
-provide instant streaming without downloading music separately.
+-***Listen***<br>
+  -You can stream the music you want from your playlist right away.
+  -provide instant streaming without downloading music separately.
 
-***Perform***
-If you are ready, always hold your own performance.
-Busking is conducted in real time (using webrtc).
+-***Perform***?<br>
+  -If you are ready, always hold your own performance.
+  -Busking is conducted in real time (using webrtc).
 
-***Communicate***
-Meet various people in a virtual space and share your taste in music.
-You can follow a composer who suits you.
-You can watch busking and show various reactions.
+-***Communicate***<br>
+  -Meet various people in a virtual space and share your taste in music.
+  -You can follow a composer who suits you.
+  -You can watch busking and show various reactions.
 
 # 팀 소개
 |이름|학번|역할|
 |:---|:---:|
-|김예리|****1565|
-|김서경|****1560|
-|김현민|****1609|
-|이아연|****1643|
-|이연주|****1644|
+|김예리|20191565|
+|김서경|20191560|
+|김현민|20171609|
+|이아연|20191643|
+|이연주|20191644|
