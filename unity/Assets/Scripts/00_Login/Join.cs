@@ -12,9 +12,6 @@ public class Join : MonoBehaviour
 
     public TextMeshProUGUI resultPopup_text;
     private Animator animator;
-
-    public delegate void JoinHandler(User user);
-    public event JoinHandler OnClickJoinButton_;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,8 +37,7 @@ public class Join : MonoBehaviour
     }
     void OnClickJoinButton()
     {
-        User user = new User();
-        for (int i=0; i<inputObjects.Length; i++)
+        for(int i=0; i<inputObjects.Length; i++)
         {
             if (inputObjects[i].isOkay == false)
             {
@@ -49,38 +45,14 @@ public class Join : MonoBehaviour
                 playAppearResultPopup("모든 문항에 올바른 값을 입력해주세요.");
                 return;
             }
-            switch (inputObjects[i].key)
-            {
-                case "id":
-                    user.id = inputObjects[i].GetText();
-                    break;
-                case "password":
-                    user.password = inputObjects[i].GetText();
-                    break;
-                case "nickname":
-                    user.nickname = inputObjects[i].GetText();
-                    break;
-                case "email":
-                    user.email = inputObjects[i].GetText();
-                    break;
-            }
         }
-        user.character = 0;
-        //가입 요청을 보냄
-        OnClickJoinButton_(user);
 
-
-    }
-    public void LoadingJoin()
-    {//로딩 애니메이션을 띄움
-        
-    }
-    public void SuccessJoin()     
-    {//로딩 애니메이션을 끝내고
+        //가입이 완료됨
         //가입 완료 애니메이션을 띄움
-        gameObject.SetActive(false);
-    }
 
+        gameObject.SetActive(false);
+
+    }
     void OnClickExitButton()
     {
         gameObject.SetActive(false);
