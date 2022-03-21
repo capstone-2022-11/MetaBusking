@@ -11,7 +11,7 @@ public class LobbySetting : MonoBehaviour
     void Start()
     {
         exitBtn.onClick.AddListener(delegate { gameObject.SetActive(false); });
-        gotoMainSceneBtn.onClick.AddListener(delegate { SceneManager.LoadScene("01_Main"); });
+        gotoMainSceneBtn.onClick.AddListener(delegate { SceneManager.LoadScene("00_Login"); });
     }
 
     public void init()
