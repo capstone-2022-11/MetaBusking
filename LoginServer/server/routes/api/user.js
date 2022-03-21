@@ -42,7 +42,7 @@ router.post('/', async(req, res) => {
                     id, email, password, nickname, character
                 })
 
-                bcrypt.genSalte(10, (err, salt) => {
+                bcrypt.genSalt(10, (err, salt) => {
                     bcrypt.hash(newUser.password, salt, (err, hash) => {
                         if (err) throw err;
                         newUser.password = hash;
